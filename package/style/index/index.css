@@ -1,0 +1,157 @@
+body, html{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+.br-bottom-2{
+	border-bottom : 2px solid #5e72e4;
+	box-sizing: content-box;
+}
+
+header{
+	height: 9% !important;
+	transition: .2s all ease-in-out;
+}
+
+.pointer{
+	cursor: pointer;
+}
+/* container */
+.container-1{
+	height: 91%;
+	transition: .2s all ease-in-out;
+	background-image: url('../../img/makeup/container1/bg.jpg');
+	background-size: 80%;
+	background-color: #fff;
+	background-position: 400px 0;
+	background-repeat: no-repeat;
+}
+
+.side-left{
+	position: absolute;
+	left: 0;
+	width: 7.6%; 
+	height: 90%;
+}
+
+.side-left .sl-bg-b{
+	margin-top: 293%;
+	width: 100%;
+	height: 23%;
+	background-image: url('../../img/makeup/container1/decoration-a@2x.jmxm.png');
+	background-repeat: no-repeat;
+	background-size: 130%;
+}
+
+.side-right{
+	position: absolute;
+	right: 0;
+	width: 7.6%; 
+	height: 90%;
+}
+
+.side-right .sr-bg-a{
+	margin-top: 80%;
+	width: 100%;
+	height: 50%;
+	background-image: url('../../img/makeup/container1/decoration-b@2x.KCyr.png');
+	background-repeat: no-repeat;
+	background-size: 240%;
+}
+
+.container-1 .container .col-6{
+	padding-top: 5em;
+	margin-left: 9em;
+}
+
+.controls{
+	width: 3px;
+	height: 45%;
+	position: fixed;
+	background: #999999;
+	left: 2%;
+	border-radius: 2em;
+	z-index: 1010;
+}
+
+.controls .thumb-controls{
+	width: 100%;
+	height: 50%;
+	border-radius: 3em;
+	position: absolute;
+}
+
+.container-2 .container{
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	transition: .2s all ease-in-out;
+}
+
+.term-create{
+	background: #fff;
+	width: 23% !important;
+	height: 18em;
+	margin-top: 8px;
+	box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+	margin-left: 1.5%;
+	border-radius: .25rem !important;
+	position: relative;
+	
+}
+
+.term-create div{
+	width: 70%;
+	height: 7em;
+	border: dashed 2px #5e72e4;
+	position: absolute;
+	top: 20%;
+	left: 15%;
+}
+
+.flash-card{
+	width: 23% !important;
+	height: 18em;
+	margin-left: 1.5%;
+	margin-top: .7%;
+	background: #fff;
+	display: block;
+	transition: .2s all ease-in-out;
+	position: relative;
+}
+
+.flash-card:hover{
+	transform: translateY(-.5em);
+	transition: .2s all ease-in-out;
+}
+
+.flash-card:hover div h6{
+	color: #5e72e4;
+	transition: .2s all ease-in-out;
+}
+
+.flash-card .card-image{
+	width: 100%;
+	height: 65%;
+	background: #fff;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.card-content{
+	font-size: 12px;
+}
+
+.user-url:hover{
+	color: #5e72e4 !important;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 720px){
+	.login-btn li button, button a{
+		width: 100% !important;
+		margin-top: 2px;
+	}
+}

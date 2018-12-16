@@ -1,0 +1,102 @@
+@keyframes spaceship-stop{
+	0% {
+		-webkit-filter: drop-shadow(0 5px 15px 0px rgba(0,0,0,0.6));
+  		filter: drop-shadow(0 5px 15px 0px rgba(0,0,0,0.6));
+		transform: translatey(0px);
+	}
+	50% {
+		-webkit-filter: drop-shadow(0 5px 30px 0px rgba(0,0,0,0.6));
+  		filter: drop-shadow(0 5px 15px 0px rgba(0,0,0,0.6));
+		transform: translatey(-20px);
+	}
+	100% {
+		-webkit-filter: drop-shadow(0 5px 15px 0px rgba(0,0,0,0.6));
+  		filter: drop-shadow(0 5px 15px 0px rgba(0,0,0,0.6));
+		transform: translatey(0px);
+	}
+}
+
+@keyframes item-a{
+	0%{
+		transform: translateX(2em) rotate(30deg);
+	}
+	50%{
+		transform: translateX(-1em) rotate(-40deg);
+	}
+	70%{
+		transform: translateX(.2em) rotate(30deg);
+	}
+	80%{
+		transform: translateX(-.1em) rotate(-20deg);
+	}
+	100%{
+		transform: translateX(0em) rotate(0deg);
+	}
+}
+
+.spaceship{
+	position: fixed;
+	z-index: 1020;
+	background: linear-gradient(87deg, #5e72e4 0, #825ee4 100%) !important;
+	top: 5%;
+	right: 0;
+	width: 4.5%;
+	padding: 1em;
+	border-radius: 50%;
+	-webkit-filter: drop-shadow(5px 5px 15px #222 );
+  	filter: drop-shadow(5px 5px 15px #222);
+  	cursor: pointer;
+  	transition: all .1s ease-in-out;
+  	border: solid 2px #fff;
+}
+
+.spaceship:active{
+	transform: scale(.8);
+	transition: all .15s ease-in-out;
+	outline: 0;
+	box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+	opacity: .65;
+	background: #5e72e4;
+}
+
+.spaceship-stop{
+	animation: spaceship-stop 6s ease-in-out infinite;
+}
+
+.setting-menu{
+	z-index: 1010;
+	display: none;
+	position: fixed;
+	top: 5%;
+	right: 0%;
+	width: 15em;
+	height: 15em;
+}
+
+.setting-menu div{
+	width: 2.5em;
+	height: 2.5em;
+	border-radius: 50%;
+	font-size: 26px;
+	box-shadow: 5px 3px 30px #222;
+	cursor: pointer;
+	transition: all ease-in-out .2s;
+	animation: item-a .6s ease-in-out;
+}
+
+.setting-menu div:hover{
+	transform: scale(1.05);
+}
+
+.setting-menu div:hover p{
+	text-shadow: 1px 1px 15px #fff;
+	transform: translateY(-2px);
+}
+
+.setting-menu ul{
+	list-style: none;
+}
+.setting-menu div p{
+	font-size: 28px;
+	padding-top: .3em;
+}

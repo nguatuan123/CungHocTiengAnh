@@ -1,0 +1,34 @@
+.flash-card{
+	width: 23% !important;
+	height: 16em;
+	margin-left: 1.5%;
+	margin-top: .7%;
+	background: #fff;
+	display: block;
+	transition: .2s all ease-in-out;
+	position: relative;
+	cursor: pointer;
+}
+
+.flash-card:hover{
+	transform: translateY(-.5em);
+	transition: .2s all ease-in-out;
+}
+
+.flash-card:hover div h6{
+	color: #5e72e4;
+	transition: .2s all ease-in-out;
+}
+
+.flash-card .card-image{
+	width: 100%;
+	height: 65%;
+	background: #fff;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.user-url:hover{
+	color: #5e72e4 !important;
+	cursor: pointer;
+}

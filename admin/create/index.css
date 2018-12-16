@@ -1,0 +1,172 @@
+.ni-image:hover{
+  color: #5e72e4;
+}
+
+.container-2 .row:hover h3{
+  display: none;
+}
+
+.container-2 .row:hover .recicle_bin{
+  display: block !important;
+}
+
+.recicle_bin{
+  display: none !important;
+  font-size: 24px !important;
+  transition: .1s all ease-in-out;
+  margin-top: 3%;
+  margin-left: 4%;
+  cursor: pointer;
+}
+
+.recicle_bin:hover{
+  transform: translateY(-2px);
+  transition: .1s all ease-in-out;
+}
+
+.title{
+  width: 40%;
+  height: 3em;
+  border: 0;
+  border-bottom: 2px #333 solid;
+  transition: 0s ease-in-out;
+  -webkit-transition: 0s ease-in-out;
+}
+
+.title[type='search']{
+  font-size: 20px; 
+}
+
+.title::-webkit-input-placeholder{
+  font-size: 16px;
+}
+
+.title:focus{
+  outline: none;
+  border-bottom: 4px #5E72E4 solid;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.preview-title{
+  display: none;
+  position: absolute;
+  width: 12em;
+  height: 12em;
+  left: 60%;
+  top: 20%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.preview-title i{
+  border: solid 1px #9999;
+  display: none;
+  padding: .2em;
+  border-radius: 50%;
+  transform: translateY(-.6em) translateX(.5em);
+  cursor: pointer;
+}
+
+.preview-title i:hover{
+  transform: scale(1.1) translateY(-.6em) translateX(.5em);
+}
+
+.preview-title:hover i{
+  display: block;
+}
+
+.preview{
+  display: none;
+  position: absolute;
+  left: 88%;
+  width: 8em;
+  height: 6em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .1s ease-in-out;
+}
+
+.preview:hover{
+  transform: translateY(-3px);
+  transition: all .1s ease-in-out;
+}
+
+.preview:hover i{
+  display: block;
+  cursor: pointer;
+}
+
+.preview i{
+  display: none;
+  font-size: 16px;
+  padding: 2px 2px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  border: solid 1px #9999;
+  top: -8%;
+  left: 90%;
+}
+
+.preview i:hover{
+  transform: scale(1.1);
+}
+/**/
+.container-1{
+  height: 10em;
+  border: dashed 2px #9999;
+  margin-top: 5%;
+}
+
+/**/
+.TE{
+  width: 40%;
+  height: 5em;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+.TV{
+  width: 40%;
+  height: 5em;
+  margin-left: 5em;
+  margin-top: 1em;
+}
+
+.card-small{
+  width: 100%;
+  height: 3em;
+  border: 0;
+  border-bottom: 2px #333 solid;
+  transition: 0s ease-in-out;
+}
+
+.card-small[type='text']{
+  font-size: 16px; 
+}
+
+.card-small::-webkit-input-placeholder{
+  font-size: 14px;
+}
+
+.card-small:focus{
+  outline: none;
+  border-bottom: 4px #5E72E4 solid;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.inputfile {
+  /* visibility: hidden etc. wont work */
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+input[type=file]{
+padding:10px;
+background:#2d2d2d;}
+
